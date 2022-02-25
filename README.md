@@ -13,7 +13,7 @@ My goal was to build an expense tracker for my school alumni association. To ens
 - Some stateful logic: [Click here](https://github.com/Lambertyubin/expense_tracker_frontend/blob/main/src/report/MonthlyScatter.js#L26)
 - UI components: [Expense Component](https://github.com/Lambertyubin/expense_tracker_frontend/blob/main/src/expense/ExpenseOverview.js#L75)
 - The application fetches data from a backend API that I built as part of the project.
-- Requests to API for authentication: [link]
+- Requests to API for authentication: [Click here](https://github.com/Lambertyubin/expense_tracker_frontend/blob/main/src/auth/api-auth.js#L1)
 - Requests to API for CRUD operations related to expenses: [Click here](https://github.com/Lambertyubin/expense_tracker_frontend/blob/main/src/expense/api-expense.js#L3)
 - Integration tests using React Testing Library [link to example test]
 
