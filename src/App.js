@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import MainRouter from './MainRouter'
+import {BrowserRouter} from 'react-router-dom'
+import { ThemeProvider } from '@material-ui//styles'
+import { hot } from 'react-hot-loader'
+import theme from './theme'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
 
-export default App;
+    React.useEffect(() => {
+        const jssStyles = document.querySelector('#jss-server-side')
+        if (jssStyles) {
+            jssStyles.parentNode.removeChild(jssStyles)
+        } }, [])
+        
+    return (
+    <BrowserRouter>
+        <ThemeProvider theme={theme}>
+            <MainRouter/>
+        </ThemeProvider>
+    </BrowserRouter>
+)}
+
+export default hot(module)(App)
